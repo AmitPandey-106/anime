@@ -9,6 +9,9 @@ export const metadata = {
 const Layout = ({ children }) => {
     return (
         <html lang="en">
+            <head>
+                <meta name="google-adsense-account" content="ca-pub-6008813570665985" />
+            </head>
             <body>
                 <header style={headerStyle}>
                     <nav style={navStyle}>

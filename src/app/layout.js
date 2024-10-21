@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
                 <footer style={footerStyle}>
                     <p style={footerTextStyle}>© 2024 Story</p>
                     <p style={footerTextStyle}>All rights Amit Pandey</p>
-                    <p style={footerTextStyle}>To reach us - amit106720@gmail.com</p>
+                
                 </footer>
             </body>
         </html>

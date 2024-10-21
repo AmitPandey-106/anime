@@ -1,8 +1,16 @@
 // app/page.js
-
+"use client"
 import Link from "next/link";
 
 const Home = () => {
+  useEffect(() => {
+    // Load Google AdSense script
+    const script = document.createElement('script');
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6008813570665985";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.body.appendChild(script);
+  }, []);
   return (
     <>
       <div style={styles.header}>

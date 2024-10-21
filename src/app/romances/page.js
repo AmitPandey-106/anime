@@ -1,52 +1,51 @@
-// app/page.js
+// app/romance.js
 
 import Link from "next/link";
 
-const Home = () => {
+const Romance = () => {
   return (
     <>
       <div style={styles.header}>
         <h2 style={styles.title}>
-          Horror Movie Stories
+          Romance Movie Stories
         </h2>
         <p style={styles.subtitle}>
           Click on the movie names to read their stories
         </p>
       </div>
 
-
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/thehauntingofhillhouse" style={styles.link}>
-            The Haunting of Hill House
+          <Link href="/romances/thedatetime" style={styles.link}>
+            The Date Night
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/theshining" style={styles.link}>
-            The Shining
+          <Link href="/romances/thelovers" style={styles.link}>
+            The Lovers
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/getout" style={styles.link}>
-            Get Out
+          <Link href="/romances/romancingthestone" style={styles.link}>
+            Romancing the Stone
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/hereditary" style={styles.link}>
-            Hereditary
+          <Link href="/romances/notebook" style={styles.link}>
+            The Notebook
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/midsommar" style={styles.link}>
-            Midsommar
+          <Link href="/romances/prideandprejudice" style={styles.link}>
+            Pride and Prejudice
           </Link>
         </h1>
       </div>
@@ -54,40 +53,40 @@ const Home = () => {
   );
 };
 
-// Inline styles for a horror theme
+// Inline styles for a romance theme
 const styles = {
   header: {
     textAlign: 'center',
     padding: '10px',
-    backgroundColor: '#1a1a1a',
-    color: '#ff4444',
+    backgroundColor: '#ffcccb', // Light red for a romantic vibe
+    color: '#d50000',
   },
   title: {
     fontSize: '2rem',
-    fontFamily: 'Creepster, cursive',
-    textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
+    fontFamily: 'Dancing Script, cursive',
+    textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
   },
   subtitle: {
-    color: '#f0f0f0',
+    color: '#333',
     fontSize: '0.8rem',
   },
   container: {
-    backgroundColor: '#121212',
-    color: '#f0f0f0',
+    backgroundColor: '#ffe0e0',
+    color: '#333',
     padding: '20px',
     margin: '10px 0',
     borderRadius: '10px',
-    boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)',
+    boxShadow: '0 0 20px rgba(0, 0, 0, 0.3)',
     transition: 'transform 0.2s',
     textAlign: 'center',
   },
   link: {
     textDecoration: 'none',
-    color: '#ff4444',
-    fontFamily: 'Creepster, cursive',
+    color: '#d50000',
+    fontFamily: 'Dancing Script, cursive',
     fontSize: '2rem',
-    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)',
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
   },
 };
 
-export default Home;
+export default Romance;

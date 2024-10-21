@@ -1,52 +1,51 @@
-// app/page.js
+// app/thriller.js
 
 import Link from "next/link";
 
-const Home = () => {
+const Thriller = () => {
   return (
     <>
       <div style={styles.header}>
         <h2 style={styles.title}>
-          Horror Movie Stories
+          Thriller Movie Stories
         </h2>
         <p style={styles.subtitle}>
           Click on the movie names to read their stories
         </p>
       </div>
 
-
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/thehauntingofhillhouse" style={styles.link}>
-            The Haunting of Hill House
+          <Link href="/thrillers/seven" style={styles.link}>
+            Se7en
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/theshining" style={styles.link}>
-            The Shining
+          <Link href="/thrillers/prisoners" style={styles.link}>
+            Prisoners
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/getout" style={styles.link}>
-            Get Out
+          <Link href="/thrillers/gonegirl" style={styles.link}>
+            Gone Girl
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/hereditary" style={styles.link}>
-            Hereditary
+          <Link href="/thrillers/zodiac" style={styles.link}>
+            Zodiac
           </Link>
         </h1>
       </div>
       <div style={styles.container}>
         <h1>
-          <Link href="/horrors/midsommar" style={styles.link}>
-            Midsommar
+          <Link href="/thrillers/thegirlwiththedragontattoo" style={styles.link}>
+            The Girl with the Dragon Tattoo
           </Link>
         </h1>
       </div>
@@ -54,13 +53,13 @@ const Home = () => {
   );
 };
 
-// Inline styles for a horror theme
+// Inline styles for a thriller theme
 const styles = {
   header: {
     textAlign: 'center',
     padding: '10px',
     backgroundColor: '#1a1a1a',
-    color: '#ff4444',
+    color: '#ffdd44', // Changed color for a thriller vibe
   },
   title: {
     fontSize: '2rem',
@@ -83,11 +82,11 @@ const styles = {
   },
   link: {
     textDecoration: 'none',
-    color: '#ff4444',
+    color: '#ffdd44', // Changed color for a thriller vibe
     fontFamily: 'Creepster, cursive',
     fontSize: '2rem',
     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)',
   },
 };
 
-export default Home;
+export default Thriller;

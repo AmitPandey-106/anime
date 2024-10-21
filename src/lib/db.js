@@ -1,1 +1,0 @@
-export const mongoUrl = process.env.mongoUrl;

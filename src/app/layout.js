@@ -12,17 +12,18 @@ const Layout = ({ children }) => {
             <body>
                 <header style={headerStyle}>
                     <nav style={navStyle}>
-                        <Link href="/" style={linkStyle}>Home</Link>
-                        <Link href="/signup" style={linkStyle}>Signup</Link>
-                        <Link href="/login" style={linkStyle}>Login</Link>
-                        <Link href="/profile" style={linkStyle}>Profile</Link>
+                        <Link href="/" style={linkStyle}>Horror</Link>
+                        <Link href="/thrillers" style={linkStyle}>Thriller</Link>
+                        <Link href="/romances" style={linkStyle}>Romance</Link>
+                        {/* <Link href="/profile" style={linkStyle}>Profile</Link> */}
                     </nav>
                 </header>
                 
                 <main style={mainStyle}>{children}</main>
                 
                 <footer style={footerStyle}>
-                    <p style={footerTextStyle}>© 2024 Anime</p>
+                    <p style={footerTextStyle}>© 2024 Story</p>
+                    <p style={footerTextStyle}>All rights Amit Pandey</p>
                 </footer>
             </body>
         </html>

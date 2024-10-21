@@ -1,6 +1,7 @@
 // app/page.js
 "use client"
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
